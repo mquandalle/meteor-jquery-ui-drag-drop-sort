@@ -1,6 +1,6 @@
 Package.describe({
   name: 'mquandalle:jquery-ui-drag-drop-sort',
-  version: '0.1.0',
+  version: '0.2.0',
   // Brief, one-line summary of the package.
   summary: 'A wrapper for jquery-ui a custom build',
   // URL to the Git repository containing the source code for this package.
@@ -12,5 +12,9 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.1.0.2');
-  api.addFiles(['jquery-ui.js', 'jquery-ui.css'], 'client');
+  api.addFiles([
+    'jquery-ui.js',
+    'jquery.ui.touch-punch.js',
+    'jquery-ui.css'
+  ], 'client');
 });
